@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gaurang Solanki - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Gaurang Solanki</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/gaurangsolanki111/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Gaurang111" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://medium.com/@gorangsolanki111" class="medium"><i class="bi bi-medium"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#blog"><i class="bi bi-journal-text navicon"></i> Blogs</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Focus of work</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="position: relative; overflow: hidden">
+  
+      <!-- Particle Canvas -->
+      <canvas id="netCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 1; text-align: left; max-width: 600px; margin-left: 50px;">
+        <h2>Gaurang Solanki</h2>
+        <p>I'm a <span class="typed" id="typedRoles"></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p class="pitch" id="rolePitch" style="font-style: italic;"></p>
+      </div>
+
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Data Scientist &amp; Developer.</h2>
+            <p class="py-3">
+              I’m an end-to-end data science engineer who understands problems from both the technical and business side. I work across the full stack of the ML lifecycle data engineering, modeling, deployment, automation, and real-world performance tuning.<br><br>
+              My focus is simple: build systems that solve actual problems, not just train models. I’m comfortable designing pipelines, optimizing models, integrating automation, and shipping production-ready solutions that scale.<br><br>
+              I enjoy turning messy, unclear challenges into clear, measurable outcomes using machine learning, deep learning, computer vision, NLP, agentic AI, and analytics. I also write about these topics regularly, breaking down complex concepts into simple, understandable explanations.<br><br>
+              At my core, I’m a generalist with the ability to go deep, someone who can translate business needs into technical strategy and deliver the full solution from concept to deployment.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Joplin, Missouri</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>gorangsolanki1@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <p>Data Scientist with 3+ years of experience across the full ML lifecycle, from data engineering and modeling to deployment and automation. I build systems that solve real problems, turning unclear challenges into measurable outcomes using ML, deep learning, computer vision, NLP, and agentic AI. I bridge business needs with technical execution and deliver end-to-end solutions that scale.</p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Data Science &amp; Analytics</h4>
+              <h5>Aug 2022 - May 2024</h5>
+              <p><em> University of Missouri–Kansas City, Kansas City, MO</em></p>
+              <p><b>Award:</b> Discipline Distinction for academic excellence.</p>
+              <p><b>Research:</b> Integrated knowledge graphs and graph neural networks for ontology-based classification and summarization.</p>
+
+            </div>
+
+            <div class="resume-item">
+              <h4>Bachelor of Technology in information Technology</h4>
+              <h5>Aug 2018 - May 2022</h5>
+              <p><em>Lovely Professional University, Punjab, India</em></p>
+            </div>
+
+          </div> -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- <h3 class="resume-title">Professional Experience</h3> -->
+            <div class="resume-item">
+              <h4>Associate Data Scientist</h4>
+              <h5>May 2024 - Present</h5>
+              <p><em>Evision Building Products LLC, Lamar, MO</em></p>
+              <ul>
+                <li>Improved defect detection with YOLO models, built high-quality vision datasets, automated drafting workflows with a Flask ETL app, developed RAG systems using Azure Foundry and FastAPI,  deployed RPAs through Azure DevOps, and partnered cross-functionally to streamline operations end-to-end.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Graduate Assistant-Data Analyst</h4>
+              <h5>June 2023 - May 2024</h5>
+              <p><em>Academic Advising Department UMKC, Kansas City, MO</em></p>
+              <ul>
+                <li>Unified data from multiple systems, built Power BI dashboards for clearer decision-making, and automated weekly reporting to remove manual work and improve accuracy.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Project Research Intern</h4>
+              <h5>June 2023 - Aug 2023</h5>
+              <p><em>AI Lab UMKC, Kansas City, MO</em></p>
+              <ul>
+                <li>Ran topic modeling on unstructured focus-group text, used GPT-3.5 for zero-shot classification, and analyzed medical questionnaire responses to produce clear structured results.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Data Scientist</h4>
+              <h5>Aug 2021 - Dec 2021</h5>
+              <p><em>Freelance, Fiverr</em></p>
+              <ul>
+                <li>Developed end-to-end data science solutions, delivering predictive, deep learning, computer vision, and NLP projects while turning complex datasets into clear visualizations and models, and providing guidance throughout the process.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4> Junior Machine Learning Engineer</h4>
+              <h5>May 2021 - July 2021</h5>
+              <p><em>Omdena</em></p>
+              <ul>
+                <li>Worked with a global team to build an end-to-end object detection and recommendation platform, contributed to MobileNet SSD architecture, managed data annotation, and streamlined processes to reduce inefficiencies and costs.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4" data-aos="fade-up">
+          <a href="assets/resume/Gaurang_Solanki_Resume.pdf" class="btn" download 
+            style="background-color: #149ddd; color: white;">
+            Resume
+          </a>
+        </div>
+
+    </section><!-- /Resume Section -->
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blogs</h2>
+        <p>I write to explain data science concepts in simple, practical terms.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Blog Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/blog/abtest.png" class="card-img-top" alt="Attention Mechanism">
+              <div class="card-body">
+                <h5 class="card-title">Two-Proportion Hypothesis Test in A/B Testing</h5>
+                <a href="https://medium.com/@gorangsolanki111/two-proportion-hypothesis-test-in-a-b-testing-c501c6e8f700"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/blog/diagram.jpg" class="card-img-top" alt="Seq2Seq Models">
+              <div class="card-body">
+                <h5 class="card-title">Breaking Down Transformer: The Architecture Behind Large Language Models</h5>
+                <a href="https://medium.com/@gorangsolanki111/breaking-down-transformer-the-architecture-behind-large-language-models-4ac92ba583ea"
+                  class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/blog/dockerlogo.png" class="card-img-top" alt="RAG Systems">
+              <div class="card-body">
+                <h5 class="card-title">Think Inside the Box: A Guide to Dockerize Your Amazing Work</h5>
+                <a href="https://medium.com/@gorangsolanki111/think-inside-the-box-a-guide-to-dockerize-your-amazing-work-abfecedad259"
+                  class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- See All Button -->
+        <div class="text-center mt-4" data-aos="fade-up">
+          <a href="https://medium.com/@gorangsolanki111"
+            target="_blank"
+            class="btn"
+            style="background-color:#149ddd; color:#fff;">
+            See all on Medium
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Blog Section -->
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Data Science</li>
+            <li data-filter=".filter-product">Data Analysis</li>
+            <li data-filter=".filter-branding">Other</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul> -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/diabetes.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>Data Analysis, Machine Learning, APIs, Streamlit</p>
+                  <a href="assets/img/portfolio/diabetes.png" title="2023" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/AI-betes-Advisor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/AnimalMigration.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>Research, Data Analysis, Visualization, Python </p>
+                  <a href="assets/img/portfolio/AnimalMigration.png" title="2022" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/Animal-Migration-Analysis" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/food.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>Image Classifier, MobileNet, APIs, Webapp Development</p>
+                  <a href="assets/img/portfolio/food.png" title="2022" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/Vegetable-Classification" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/tweets.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>Data Analysis, Pyspark, Hadoop, APIs </p>
+                  <a href="assets/img/portfolio/tweets.png" title="2023" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/Sentiment-Analysis" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/games.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>C language, C++</p>
+                  <a href="assets/img/portfolio/games.png" title="2018" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/C-C-Games" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/dogs.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>Image Processing, Classification, MobileNetV2 Arch.</p>
+                  <a href="assets/img/portfolio/dogs.png" title="2021" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/Dog-Vision" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/youtube.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>Power Bi, DAX, Visualization</p>
+                  <a href="assets/img/portfolio/youtube.png" title="2024" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://app.powerbi.com/groups/me/reports/b4e207ba-0952-4c09-9056-82e1dd31ffb0/ReportSection551694cd78ee50295e80?experience=power-bi" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/rag.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>RAG, Vector DB, Local Llama, StreamLit</p>
+                  <a href="assets/img/portfolio/rag.png" title="2025" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/RAGwithLlama" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/cars.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>python, Tensorflow, Image processing, classifiaction </p>
+                  <a href="assets/img/portfolio/cars.png" title="2021" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/Car-Recognizer" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+          
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/scansplit.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p>AWS, Python, Streamlit, OCR</p>
+                  <a href="assets/img/portfolio/scansplit.png" title="2023" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Gaurang111/cloudexpense" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Focus of work</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-clipboard-data-fill"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Data Analysis and Visualization</a></h4>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-database-fill-gear"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Data Engineering</a></h4>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-nut"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">ML and Deep Learning</a></h4>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-translate"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Generative AI</a></h4>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Agentic AI</a></h4>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-search"></i></div>
+            <h4 class="title"><a href="" class="stretched-link">Problem Solving</a></h4>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
