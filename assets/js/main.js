@@ -156,9 +156,9 @@
 
   /*** ---------------- TYPED.JS ROLE PITCH ---------------- ***/
   const rolePitches = {
-      "Data Scientist": "I extract insights from data and drive decisions.",
-      "ML Engineer": "I build and train models for real-world impact.",
-      "Developer": "I build solutions that deploy and optimize ML models."
+    "Data Scientist": "I turn raw data into decisions.",
+    "ML Engineer": "I build models that learn and scale.",
+    "Developer": "I ship ML from prototype to production."
     };
 
     const typed = new Typed('#typedRoles', {
