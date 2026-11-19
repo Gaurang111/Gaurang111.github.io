@@ -1,543 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gaurang Solanki - Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gaurang Solanki · AI Engineer: Computer Vision, Agentic AI &amp; Physical AI</title>
+  <meta name="description" content="Gaurang Solanki is an AI engineer who builds computer vision, agentic AI and physical AI systems: models that see, reason and act, taken from prototype to production.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gaurang Solanki · AI Engineer: Computer Vision, Agentic AI &amp; Physical AI">
+  <meta property="og:description" content="AI that sees, reasons and acts in the real world.">
+  <meta property="og:url" content="https://gaurang111.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Gaurang Solanki","jobTitle":"AI Engineer","url":"https://gaurang111.github.io/",
+   "knowsAbout":["Computer vision","Object detection","Image segmentation","Anomaly detection","Multimodal AI","Agentic AI","LLM agents","RAG","Model Context Protocol","Physical AI","Robot learning"],
+   "sameAs":["https://github.com/Gaurang111","https://www.linkedin.com/in/gaurangsolanki111/","https://medium.com/@gorangsolanki111"]}
+  </script>
 </head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
 
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Gaurang Solanki, home"><span class="brand-mark">GS</span><span>Gaurang Solanki</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#focus">Focus</a>
+        <a href="#work">Work</a>
+        <a href="#day-job">Day job</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+      </button>
+      <a class="nav-cta" href="#contact">Let's talk</a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
     </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Gaurang Solanki</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/gaurangsolanki111/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/Gaurang111" class="github"><i class="bi bi-github"></i></a>
-      <a href="https://medium.com/@gorangsolanki111" class="medium"><i class="bi bi-medium"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#blog"><i class="bi bi-journal-text navicon"></i> Blogs</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Focus of work</a></li>
-      </ul>
-    </nav>
-
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="position: relative; overflow: hidden">
-  
-      <!-- Particle Canvas -->
-      <canvas id="netCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 1; text-align: left; max-width: 600px; margin-left: 50px;">
-        <h2>Gaurang Solanki</h2>
-        <!-- <p>I'm <span class="typed" data-typed-items="Data Scientist, ML Engineer, Developer">Data Scientist</span>
-          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p> -->
-        <p>I'm a <span class="typed" id="typedRoles"></span>
-          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <p class="pitch" id="rolePitch" style="font-style: italic;"></p>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="lab" aria-label="Interactive inspection cell: a camera detects parts on a conveyor, an agent decides which are defective, and a robot arm moves them to a reject bin. Click a part to flag it." role="img"></canvas>
+      <div class="wrap hero-in">
+        <div class="hero-kicker rv">
+          <span class="chip act"><span class="dot"></span>AI Engineer</span>
+          <span class="chip see">Computer Vision</span>
+          <span class="chip see">Agentic AI</span>
+          <span class="chip see">Physical AI</span>
+        </div>
+        <h1 class="rv d1">AI that <span class="see">sees</span>, reasons and <span class="accent">acts</span> in the real world.</h1>
+        <p class="hero-sub rv d2">I'm Gaurang, an AI engineer. I build <strong>computer vision</strong> that understands images and video, <strong>agents</strong> that reason and use tools, and <strong>physical AI</strong> that turns decisions into motion. I take them from first prototype to something people rely on.</p>
+        <div class="hero-cta rv d3">
+          <a class="btn btn-act" href="#work">See the work
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
       </div>
-
-
+      <p class="hero-hint mono" id="hint"><span class="key"><span class="mouse-only">click</span><span class="touch-only">tap</span></span> any part to flag it<span class="long"> · the agent sends defects to the reject bin</span></p>
+      <span class="scroll-cue mono" aria-hidden="true">SCROLL</span>
     </section>
 
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Data Scientist &amp; Developer.</h2>
-            <p class="py-3">
-              I’m an end-to-end data science engineer who understands problems from both the technical and business side. I work across the full stack of the ML lifecycle data engineering, modeling, deployment, automation, and real-world performance tuning.<br><br>
-              My focus is simple: build systems that solve actual problems. I’m comfortable designing pipelines, optimizing models, integrating automation, and shipping production-ready solutions that scale.<br><br>
-              I enjoy turning messy, unclear challenges into clear, measurable outcomes using machine learning, deep learning, computer vision, Generative and agentic AI, and analytics. I also write about these topics regularly, breaking down complex concepts into simple, understandable explanations.<br><br>
-              At my core, I’m a generalist with the ability to go deep, someone who can translate business needs into technical strategy and deliver the full solution from concept to deployment.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Joplin, Missouri</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>gorangsolanki1@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Experience</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <p>Data Scientist with 3+ years of experience across the full ML lifecycle, from data engineering and modeling to deployment and automation. I build systems that solve real problems, turning unclear challenges into measurable outcomes using ML, deep learning, computer vision, NLP, and agentic AI. I bridge business needs with technical execution and deliver end-to-end solutions that scale.</p>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science in Data Science &amp; Analytics</h4>
-              <h5>Aug 2022 - May 2024</h5>
-              <p><em> University of Missouri–Kansas City, Kansas City, MO</em></p>
-              <p><b>Award:</b> Discipline Distinction for academic excellence.</p>
-              <p><b>Research:</b> Integrated knowledge graphs and graph neural networks for ontology-based classification and summarization.</p>
-
-            </div>
-
-            <div class="resume-item">
-              <h4>Bachelor of Technology in information Technology</h4>
-              <h5>Aug 2018 - May 2022</h5>
-              <p><em>Lovely Professional University, Punjab, India</em></p>
-            </div>
-
-          </div> -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <!-- <h3 class="resume-title">Professional Experience</h3> -->
-            <div class="resume-item">
-              <h4>Data Scientist</h4>
-              <h5>May 2024 - Present</h5>
-              <p><em>Evision Building Products LLC, Lamar, MO</em></p>
-              <!-- <ul>
-                <li>Data Scientist with hands-on experience building and deploying production-grade systems across ML, computer vision, NLP, and process automation. Designed real-time defect detection pipelines, RAG-based knowledge systems, and custom MCP servers that bring natural language access to live manufacturing data. Consistently delivers measurable impact by reducing manual effort, improving operational efficiency, and bridging the gap between cutting-edge AI and real-world industrial environments.</li>
-              </ul> -->
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graduate Assistant-Data Analyst</h4>
-              <h5>June 2023 - May 2024</h5>
-              <p><em>Academic Advising Department UMKC, Kansas City, MO</em></p>
-              <!-- <ul>
-                <li>Unified data from multiple systems, built Power BI dashboards for clearer decision-making, and automated weekly reporting to remove manual work and improve accuracy.</li>
-              </ul> -->
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Project Research Intern</h4>
-              <h5>June 2023 - Aug 2023</h5>
-              <p><em>AI Lab UMKC, Kansas City, MO</em></p>
-              <!-- <ul>
-                <li>Ran topic modeling on unstructured focus-group text, used GPT-3.5 for zero-shot classification, and analyzed medical questionnaire responses to produce clear structured results.</li>
-              </ul> -->
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Data Scientist</h4>
-              <h5>Aug 2021 - Dec 2021</h5>
-              <p><em>Freelance, Fiverr</em></p>
-              <!-- <ul>
-                <li>Developed end-to-end data science solutions, delivering predictive, deep learning, computer vision, and NLP projects while turning complex datasets into clear visualizations and models, and providing guidance throughout the process.</li>
-              </ul> -->
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4> Junior Machine Learning Engineer</h4>
-              <h5>May 2021 - July 2021</h5>
-              <p><em>Omdena</em></p>
-              <!-- <ul>
-                <li>Worked with a global team to build an end-to-end object detection and recommendation platform, contributed to MobileNet SSD architecture, managed data annotation, and streamlined processes to reduce inefficiencies and costs.</li>
-              </ul> -->
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-        <div class="text-center mt-4" data-aos="fade-up">
-          <a href="assets/resume/Gaurang_Solanki_Resume.pdf" class="btn" download 
-            style="background-color: #149ddd; color: white;">
-            Resume
-          </a>
-        </div>
-
-    </section><!-- /Resume Section -->
-
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Blogs</h2>
-        <p>I write to explain data science concepts in simple, practical terms.</p>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4">
-
-          <!-- Blog Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/img/blog/abtest.png" class="card-img-top" alt="Attention Mechanism">
-              <div class="card-body">
-                <h5 class="card-title">Two-Proportion Hypothesis Test in A/B Testing</h5>
-                <a href="https://medium.com/@gorangsolanki111/two-proportion-hypothesis-test-in-a-b-testing-c501c6e8f700"></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Blog Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/img/blog/diagram.jpg" class="card-img-top" alt="Seq2Seq Models">
-              <div class="card-body">
-                <h5 class="card-title">Breaking Down Transformer: The Architecture Behind Large Language Models</h5>
-                <a href="https://medium.com/@gorangsolanki111/breaking-down-transformer-the-architecture-behind-large-language-models-4ac92ba583ea"
-                  class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Blog Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/img/blog/dockerlogo.png" class="card-img-top" alt="RAG Systems">
-              <div class="card-body">
-                <h5 class="card-title">Think Inside the Box: A Guide to Dockerize Your Amazing Work</h5>
-                <a href="https://medium.com/@gorangsolanki111/think-inside-the-box-a-guide-to-dockerize-your-amazing-work-abfecedad259"
-                  class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- See All Button -->
-        <div class="text-center mt-4" data-aos="fade-up">
-          <a href="https://medium.com/@gorangsolanki111"
-            target="_blank"
-            class="btn"
-            style="background-color:#149ddd; color:#fff;">
-            See all on Medium
-          </a>
-        </div>
-
-      </div>
-    </section>
-    <!-- /Blog Section -->
-
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Data Science</li>
-            <li data-filter=".filter-product">Data Analysis</li>
-            <li data-filter=".filter-branding">Other</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul> -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/openatlas.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Computer Vision, Data Visualization, Python</p>
-                  <a href="assets/img/portfolio/openatlas.png" title="2026" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/openatlas" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/diabetes.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Data Analysis, Machine Learning, APIs, Streamlit</p>
-                  <a href="assets/img/portfolio/diabetes.png" title="2023" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/AI-betes-Advisor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/AnimalMigration.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Research, Data Analysis, Visualization, Python </p>
-                  <a href="assets/img/portfolio/AnimalMigration.png" title="2022" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/Animal-Migration-Analysis" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/food.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Image Classifier, MobileNet, APIs, Webapp Development</p>
-                  <a href="assets/img/portfolio/food.png" title="2022" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/Vegetable-Classification" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/tweets.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Data Analysis, Pyspark, Hadoop, APIs </p>
-                  <a href="assets/img/portfolio/tweets.png" title="2023" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/Sentiment-Analysis" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/games.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>C language, C++</p>
-                  <a href="assets/img/portfolio/games.png" title="2018" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/C-C-Games" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/dogs.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Image Processing, Classification, MobileNetV2 Arch.</p>
-                  <a href="assets/img/portfolio/dogs.png" title="2021" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/Dog-Vision" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/youtube.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>Power Bi, DAX, Visualization</p>
-                  <a href="assets/img/portfolio/youtube.png" title="2024" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://app.powerbi.com/groups/me/reports/b4e207ba-0952-4c09-9056-82e1dd31ffb0/ReportSection551694cd78ee50295e80?experience=power-bi" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/rag.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>RAG, Vector DB, Local Llama, StreamLit</p>
-                  <a href="assets/img/portfolio/rag.png" title="2025" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/RAGwithLlama" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/cars.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>python, Tensorflow, Image processing, classifiaction </p>
-                  <a href="assets/img/portfolio/cars.png" title="2021" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/Car-Recognizer" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-          
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/scansplit.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <p>AWS, Python, Streamlit, OCR</p>
-                  <a href="assets/img/portfolio/scansplit.png" title="2023" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Gaurang111/cloudexpense" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Focus of work</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-clipboard-data-fill"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Data Analysis and Visualization</a></h4>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-database-fill-gear"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Data Engineering</a></h4>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-nut"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">ML and Deep Learning</a></h4>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-translate"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Generative AI</a></h4>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Agentic AI</a></h4>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-search"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Problem Solving</a></h4>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Object detection</span><span>Segmentation</span><span>Anomaly detection</span><span>Multimodal models</span><span>Tool-calling agents</span><span>RAG</span><span>MCP</span><span>Structured outputs</span><span>Robot learning</span><span>Sim-to-real</span><span>Vision-Language-Action</span><span>PyTorch</span>
+        <span>Object detection</span><span>Segmentation</span><span>Anomaly detection</span><span>Multimodal models</span><span>Tool-calling agents</span><span>RAG</span><span>MCP</span><span>Structured outputs</span><span>Robot learning</span><span>Sim-to-real</span><span>Vision-Language-Action</span><span>PyTorch</span>
       </div>
     </div>
 
+    <!-- ============ FOCUS ============ -->
+    <section class="sec" id="focus">
+      <div class="wrap">
+        <div class="sec-head split">
+          <div>
+            <p class="eyebrow rv"><b>01</b> What I build</p>
+            <h2 class="sec-title rv d1">Models are easy. Making them work outside the notebook is the job.</h2>
+          </div>
+          <p class="sec-lead rv d2">I work where AI meets cameras, business systems and real hardware. I build the whole system end to end: data, model, interface and deployment, and I measure it honestly.</p>
+        </div>
+        <div class="focus">
+          <article class="focus-card rv">
+            <div class="focus-ico see"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10V6a2 2 0 0 1 2-2h4M22 4h4a2 2 0 0 1 2 2v4M28 22v4a2 2 0 0 1-2 2h-4M10 28H6a2 2 0 0 1-2-2v-4"/><path d="M7 16s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="16" cy="16" r="2.6"/></svg></div>
+            <h3>Computer vision</h3>
+            <p>Perception that drives decisions. Object detection, classification, segmentation and recognition, anomaly detection that spots what doesn't belong, and multimodal models that connect vision with language. From the dataset to a model running live on a camera feed.</p>
+            <ul><li class="chip">Object detection</li><li class="chip">Classification</li><li class="chip">Segmentation</li><li class="chip">Recognition</li><li class="chip">Anomaly detection</li><li class="chip">Multimodal</li></ul>
+          </article>
+          <article class="focus-card rv d1">
+            <div class="focus-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="11" width="10" height="10" rx="2.5"/><circle cx="6" cy="6" r="2.2"/><circle cx="26" cy="6" r="2.2"/><circle cx="6" cy="26" r="2.2"/><circle cx="26" cy="26" r="2.2"/><path d="m7.6 7.6 3.6 3.6M24.4 7.6l-3.6 3.6M7.6 24.4l3.6-3.6M24.4 24.4l-3.6-3.6"/></svg></div>
+            <h3>Agentic AI</h3>
+            <p>LLM systems that do real work: tool-calling agents, RAG with citations, structured extraction from messy documents and MCP servers. Built with guardrails: typed tools, read-only defaults, tracing and a human approval step.</p>
+            <ul><li class="chip">Tool calling</li><li class="chip">RAG</li><li class="chip">MCP</li><li class="chip">Azure OpenAI</li><li class="chip">Claude</li></ul>
+          </article>
+          <article class="focus-card rv d2">
+            <div class="focus-ico act"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 27h12"/><path d="M8 27v-4h6v4"/><circle cx="11" cy="21" r="2"/><path d="m12.4 19.6 6.1-8.1"/><circle cx="19.5" cy="10" r="2"/><path d="m21.4 10.6 4.6 2.4"/><path d="m26 13 1.8-2.4M26 13l.6 3"/></svg></div>
+            <h3>Physical AI</h3>
+            <p>Learning that moves hardware. Reinforcement learning, world models and Vision-Language-Action policies, trained in simulation with domain randomisation and carried across the gap to real robot arms.</p>
+            <ul><li class="chip">Robot learning</li><li class="chip">VLA</li><li class="chip">MuJoCo</li><li class="chip">LeRobot</li><li class="chip">Sim-to-real</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="sec" id="work">
+      <div class="wrap">
+        <div class="sec-head split">
+          <div>
+            <p class="eyebrow rv"><b>02</b> Selected work</p>
+            <h2 class="sec-title rv d1">Things I built to find out if they could work.</h2>
+          </div>
+          <p class="sec-lead rv d2">Robot-learning projects I build on my own hardware, from simulation to a real arm. Each one has a write-up covering the architecture, the results and what went wrong. Smaller and earlier work is in the archive.</p>
+        </div>
+
+        <div class="grid grid-2" id="projectGrid"></div>
+
+        <div class="archive" id="archive">
+          <button class="archive-toggle" id="archiveBtn" type="button" aria-expanded="false" aria-controls="archivePanel">
+            <div>
+              <h3>Archive</h3>
+              <span class="mono" id="archiveCount">Smaller and earlier projects</span>
+            </div>
+            <span class="archive-plus" aria-hidden="true"></span>
+          </button>
+          <div class="archive-panel" id="archivePanel">
+            <div class="archive-inner"><div class="archive-grid" id="archiveGrid"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DAY JOB ============ -->
+    <section class="sec" id="day-job">
+      <div class="wrap dayjob">
+        <div class="dayjob-meta">
+          <p class="eyebrow rv"><b>03</b> My day job</p>
+          <h2 class="dayjob-co rv d1">Envision Outdoor Living<small>AI &amp; Data team · Manufacturing</small></h2>
+          <span class="chip see rv d2" style="align-self:flex-start"><span class="dot pulse"></span>Currently</span>
+        </div>
+        <div>
+          <p class="dayjob-text rv">By day I build AI for a manufacturer, where it has to work on a <em>factory floor and in the back office</em>, not in a demo. I deploy <em>real-time computer-vision defect detection</em> on GPU servers wired into the plant's PLCs, build <em>LLM pipelines</em> that read document-heavy business processes and match them against enterprise systems, and stand up <em>RAG assistants and MCP servers</em> on Azure OpenAI that give AI controlled, read-only access to business systems. Everything follows one rule: <em>the AI proposes, a person approves</em>, and every accuracy number is measured against human-verified data.</p>
+          <div class="pillars">
+            <div class="pillar rv"><b>Vision on the line</b><span>Defect detection running in real time on GPU servers, connected to PLCs, with monitoring and Six Sigma quality analytics.</span></div>
+            <div class="pillar rv d1"><b>Agents with guardrails</b><span>RAG and tool-calling assistants with citations and tracing, plus read-only MCP servers for business systems.</span></div>
+            <div class="pillar rv d2"><b>Documents to decisions</b><span>Structured LLM extraction and fuzzy matching against enterprise systems, with audit trails and human approval.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRINCIPLES ============ -->
+    <section class="sec" id="principles">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow rv"><b>04</b> How I work</p>
+          <h2 class="sec-title rv d1">Four habits that make AI hold up in the real world.</h2>
+        </div>
+        <div class="principles">
+          <div class="principle rv"><h3>Ship the whole system</h3><p>Data, model, interface and deployment. A model nobody can use has not been built yet.</p></div>
+          <div class="principle rv d1"><h3>Measure honestly</h3><p>Fixed-seed evaluations and human-verified ground truth. Report the failures; they teach the most.</p></div>
+          <div class="principle rv d2"><h3>Keep people in the loop</h3><p>Typed tools, read-only defaults and a human approval step before anything changes.</p></div>
+          <div class="principle rv d3"><h3>Respect the physics</h3><p>Simulators do not lag, sag or lose sight of objects. Real hardware does, so model it.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLKIT ============ -->
+    <section class="sec" id="toolkit">
+      <div class="wrap">
+        <div class="sec-head split">
+          <div>
+            <p class="eyebrow rv"><b>05</b> Toolkit</p>
+            <h2 class="sec-title rv d1">What I reach for.</h2>
+          </div>
+          <p class="sec-lead rv d2">Python first. PyTorch for learning, OpenCV for seeing, and whatever the production environment needs to make it stick.</p>
+        </div>
+        <div class="kit rv">
+          <div class="kit-col"><h3><span class="mono">/a</span>Computer vision</h3><ul><li>Object detection</li><li>Classification</li><li>Segmentation</li><li>Recognition</li><li>Anomaly detection</li><li>Multimodal models</li><li>OpenCV</li><li>MediaPipe</li><li>Roboflow</li><li>GPU inference</li></ul></div>
+          <div class="kit-col"><h3><span class="mono">/b</span>Agentic AI</h3><ul><li>Claude API</li><li>Azure OpenAI</li><li>RAG</li><li>Azure AI Search</li><li>ChromaDB</li><li>Structured outputs</li><li>Tool calling</li><li>MCP</li><li>Langfuse</li><li>Ollama</li></ul></div>
+          <div class="kit-col"><h3><span class="mono">/c</span>Physical AI</h3><ul><li>PyTorch</li><li>Reinforcement learning</li><li>World models</li><li>VLA fine-tuning</li><li>LeRobot</li><li>MuJoCo</li><li>Gymnasium</li><li>Domain randomisation</li></ul></div>
+          <div class="kit-col"><h3><span class="mono">/d</span>ML research</h3><ul><li>PyTorch Geometric</li><li>GNNs (HGT, TGN)</li><li>Lightning</li><li>Conformal prediction</li><li>scikit-learn</li><li>GRASP optimisation</li></ul></div>
+          <div class="kit-col"><h3><span class="mono">/e</span>Engineering</h3><ul><li>Python</li><li>TypeScript</li><li>FastAPI</li><li>React</li><li>SQL Server</li><li>Docker</li><li>Azure</li><li>Git &amp; CI</li><li>pytest</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section class="sec" id="writing">
+      <div class="wrap">
+        <div class="sec-head split">
+          <div>
+            <p class="eyebrow rv"><b>06</b> Writing</p>
+            <h2 class="sec-title rv d1">I explain what I learn.</h2>
+          </div>
+          <p class="sec-lead rv d2">Plain-language deep dives on how AI actually works, from YOLO and transformers to constrained decoding and MCP.</p>
+        </div>
+        <div class="posts" id="posts"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+        <div class="sec-foot"><a class="btn" href="writing.html" id="allPosts">All articles
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="sec contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow rv"><b>07</b> Contact</p>
+        <h2 class="contact-big rv d1">Building AI for the real world? <span>Let's talk.</span></h2>
+        <p class="sec-lead rv d2" style="margin-top:24px">I'm interested in AI engineering roles in computer vision, agentic AI and physical AI. The fastest way to reach me is by email or on LinkedIn.</p>
+        <div class="contact-row rv d3">
+          <button class="mail" id="mail" type="button"><span id="mailText"></span><span class="mono" id="mailHint">copy</span></button>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/gaurangsolanki111/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.6 4.78 6v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11z"/></svg></a>
+            <a href="https://github.com/Gaurang111" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+            <a href="https://medium.com/@gorangsolanki111" target="_blank" rel="noopener" aria-label="Medium"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot mono">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Gaurang Solanki</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/data.js"></script>  <script src="assets/js/site.js"></script>
+  <script src="assets/js/lab.js"></script>
 </body>
-
 </html>

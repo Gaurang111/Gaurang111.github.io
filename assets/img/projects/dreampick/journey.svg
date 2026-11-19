@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="470" rx="18" fill="#0b1018"/>
+  <text x="640" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">Three training runs, two failures</text>
+  <text x="640" y="72" text-anchor="middle" font-size="15" fill="#8b98ad">each failure changed what the next run looked like</text>
+
+  <!-- run 1 -->
+  <rect x="40" y="100" width="380" height="330" rx="16" fill="#111a2a" stroke="#f87171" stroke-width="2.5"/>
+  <text x="62" y="136" font-size="20" font-weight="700" fill="#f87171">Run 1: camera images</text>
+  <text x="62" y="162" font-size="14" fill="#9fb0c6">Learned to reach and grab, never to lift.</text>
+  <g font-size="14" fill="#d5deea">
+    <text x="62" y="200">• the simulated gripper's collision</text><text x="74" y="220">shapes could not really hold the cube</text>
+    <text x="62" y="250">• the camera lost sight of the cube</text><text x="74" y="270">right when the arm reached it</text>
+    <text x="62" y="300">• a reward loophole: drag the cube</text><text x="74" y="320">toward the base instead of lifting</text>
+    <text x="62" y="350">• a crash ran unnoticed overnight</text>
+  </g>
+  <text x="62" y="403" font-size="14" font-weight="600" fill="#f87171">Result: lift failed in simulation</text>
+
+  <!-- arrow -->
+  <path d="M424 265 L452 265" stroke="#8b98ad" stroke-width="3" fill="none"/><path d="M446 258 L454 265 L446 272 z" fill="#8b98ad"/>
+
+  <!-- run 2 -->
+  <rect x="460" y="100" width="380" height="330" rx="16" fill="#111a2a" stroke="#ff9f43" stroke-width="2.5"/>
+  <text x="482" y="136" font-size="20" font-weight="700" fill="#ff9f43">Run 2: images, fixed setup</text>
+  <text x="482" y="162" font-size="14" fill="#9fb0c6">Fixed the gripper, the camera and the reward.</text>
+  <g font-size="14" fill="#d5deea">
+    <text x="482" y="200">• lift worked about 96% of the time</text><text x="494" y="220">in simulation</text>
+    <text x="482" y="250">• new camera chosen by measurement</text><text x="494" y="270">(360 positions scored)</text>
+    <text x="482" y="300">• on the real arm the open-loop replay</text><text x="494" y="320">missed the cube</text>
+    <text x="482" y="350">• the policy steered with camera pixels</text><text x="494" y="370">the real arm cannot reproduce</text>
+  </g>
+  <text x="482" y="403" font-size="14" font-weight="600" fill="#ff9f43">Result: great in sim, missed on the desk</text>
+
+  <path d="M844 265 L872 265" stroke="#8b98ad" stroke-width="3" fill="none"/><path d="M866 258 L874 265 L866 272 z" fill="#8b98ad"/>
+
+  <!-- run 3 -->
+  <rect x="880" y="100" width="360" height="330" rx="16" fill="#111a2a" stroke="#4ade80" stroke-width="2.5"/>
+  <text x="902" y="136" font-size="20" font-weight="700" fill="#4ade80">Run 3: state, not pixels</text>
+  <text x="902" y="162" font-size="14" fill="#9fb0c6">Joint angles + cube pose in, joint targets out.</text>
+  <g font-size="14" fill="#d5deea">
+    <text x="902" y="200">• 8 stage curriculum: reach, grasp,</text><text x="914" y="220">lift, wide zone, noise, occlusion,</text><text x="914" y="240">randomised physics, polish</text>
+    <text x="902" y="270">• reward guarded against every</text><text x="914" y="290">loophole found in runs 1 and 2</text>
+    <text x="902" y="320">• 5M+ steps, about 170 h on a</text><text x="914" y="340">laptop RTX 3070 Ti</text>
+  </g>
+  <text x="902" y="403" font-size="14" font-weight="600" fill="#4ade80">Result: 84% in a noisy simulator, real picks</text>
+</svg>

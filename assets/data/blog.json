@@ -1,0 +1,155 @@
+{
+  "source": "https://medium.com/feed/@gorangsolanki111",
+  "posts": [
+    {
+      "title": "How Do You Force an LLM to Always Return Valid JSON?",
+      "url": "https://medium.com/@gorangsolanki111/how-do-you-force-an-llm-to-always-return-valid-json-14154916a011",
+      "date": "2026-04-26",
+      "tags": [
+        "software engineering",
+        "finite state machine",
+        "llm",
+        "transformers",
+        "ai"
+      ],
+      "excerpt": "Constrained decoding, how Probability Machine are forced to produce valid structure, token by token. At some point you shipped an LLM-powered feature into production. The model called an API, or populated a database…",
+      "readMinutes": 15,
+      "thumbnail": "assets/img/blog/how-do-you-force-an-llm-to-always-return-valid-json.jpg"
+    },
+    {
+      "title": "How MCP Turns Isolated AI Models into Agents That Actually Do Things",
+      "url": "https://medium.com/@gorangsolanki111/how-mcp-turns-isolated-ai-models-into-agents-that-actually-do-things-68185215a3ab",
+      "date": "2026-03-15",
+      "tags": [
+        "agentic ai",
+        "ai",
+        "llm",
+        "mcp server",
+        "ai agent"
+      ],
+      "excerpt": "A complete, step-by-step guide to the Model Context Protocol, what it is, how it works, and why it makes AI agents dramatically more capable. Imagine hiring the world’s most knowledgeable assistant. They can explain…",
+      "readMinutes": 8,
+      "thumbnail": "assets/img/blog/how-mcp-turns-isolated-ai-models-into-agents-that-actually-do-things.jpg"
+    },
+    {
+      "title": "Two-Proportion Hypothesis Test in A/B Testing",
+      "url": "https://medium.com/@gorangsolanki111/two-proportion-hypothesis-test-in-a-b-testing-c501c6e8f700",
+      "date": "2025-11-17",
+      "tags": [
+        "p value",
+        "probability",
+        "a b testing",
+        "hypothesis testing",
+        "statistics"
+      ],
+      "excerpt": "A/B testing is the backbone of data-driven decision-making in businesses, marketing, and product optimization. It allows you to compare two versions of a product, webpage, or feature to see which performs better on a…",
+      "readMinutes": 2,
+      "thumbnail": "assets/img/blog/two-proportion-hypothesis-test-in-a-b-testing.jpg"
+    },
+    {
+      "title": "Understanding YOLO: Unified, Real-Time Object Detection",
+      "url": "https://medium.com/@gorangsolanki111/understanding-yolo-unified-real-time-object-detection-49f350bfa937",
+      "date": "2025-10-26",
+      "tags": [
+        "yolo",
+        "object detection",
+        "probability",
+        "classification",
+        "cnn"
+      ],
+      "excerpt": "When YOLOv1 (You Only Look Once) was introduce in 2016, it marked a major shift in object detection. Before YOLO, detectors like R-CNN and Fast R-CNN relied on region proposals , performing classification on multiple…",
+      "readMinutes": 3,
+      "thumbnail": "assets/img/blog/understanding-yolo-unified-real-time-object-detection.jpg"
+    },
+    {
+      "title": "Build a Solid, No-Framework, Local Retrieval-Augmented Generation (RAG)",
+      "url": "https://medium.com/@gorangsolanki111/build-a-solid-no-framework-local-retrieval-augmented-generation-rag-aaa2eaf7c156",
+      "date": "2025-09-15",
+      "tags": [
+        "retrieval augmented gen",
+        "python",
+        "llama 3",
+        "llm",
+        "vector database"
+      ],
+      "excerpt": "Retrieval-Augmented Generation (RAG) pairs two systems: - A retriever that finds relevant facts from your knowledge base. - A generator (LLM) that reads those facts and writes an answer. Why not just ask the LLM?…",
+      "readMinutes": 8,
+      "thumbnail": "assets/img/blog/build-a-solid-no-framework-local-retrieval-augmented-generation-rag.jpg"
+    },
+    {
+      "title": "Think Inside the Box: A Guide to Dockerize Your Amazing Work",
+      "url": "https://medium.com/@gorangsolanki111/think-inside-the-box-a-guide-to-dockerize-your-amazing-work-abfecedad259",
+      "date": "2025-08-24",
+      "tags": [
+        "docker compose",
+        "docker installation",
+        "docker",
+        "docker image",
+        "containers"
+      ],
+      "excerpt": "Picture this: you build a cool app on your laptop. It works flawlessly. You show it to your colleague, they run it… and boom: “It doesn’t work on my machine!” Classic. The problem? Every machine has its own quirks: OS…",
+      "readMinutes": 7,
+      "thumbnail": "assets/img/blog/think-inside-the-box-a-guide-to-dockerize-your-amazing-work.jpg"
+    },
+    {
+      "title": "Breaking Down Transformer: The Architecture Behind Large Language Models",
+      "url": "https://medium.com/@gorangsolanki111/breaking-down-transformer-the-architecture-behind-large-language-models-4ac92ba583ea",
+      "date": "2025-08-18",
+      "tags": [
+        "llm",
+        "transformer architecture",
+        "genarative ai",
+        "attention mechanism",
+        "positional encoding"
+      ],
+      "excerpt": "Transformers changed the way machines understand and process language. In the last blog we explored the Attention Mechanism in RNNs, and saw how it helped models focus on relevant parts of a sequence instead of relying…",
+      "readMinutes": 9,
+      "thumbnail": "assets/img/blog/breaking-down-transformer-the-architecture-behind-large-language-models.jpg"
+    },
+    {
+      "title": "Attention Changes Everything: Focus Like a Human",
+      "url": "https://medium.com/@gorangsolanki111/attention-changes-everything-focus-like-a-human-e2c4d5ba287e",
+      "date": "2025-07-28",
+      "tags": [
+        "bidirectional rnn",
+        "rnn",
+        "lstm",
+        "attention mechanism",
+        "llm"
+      ],
+      "excerpt": "Tools like ChatGPT or Google Gemini can process language in a way that feels natural. This post explains the idea called Attention that helps make that possible. When you read a sentence in a different language and try…",
+      "readMinutes": 3,
+      "thumbnail": "assets/img/blog/attention-changes-everything-focus-like-a-human.jpg"
+    },
+    {
+      "title": "Inside RNNs: The AI That Remembers",
+      "url": "https://medium.com/@gorangsolanki111/inside-rnns-the-ai-that-remembers-e45a7cacd1ac",
+      "date": "2025-07-19",
+      "tags": [
+        "bidirectional lstm",
+        "gated recurrent unit",
+        "rnn",
+        "long short term memory",
+        "lstm"
+      ],
+      "excerpt": "Vanishing gradients, gating mechanisms, and sequence-to-sequence models explained We explored how Recurrent Neural Networks (RNNs) allow AI to handle sequences and “remember” information over time. But RNNs have a…",
+      "readMinutes": 6,
+      "thumbnail": "assets/img/blog/inside-rnns-the-ai-that-remembers.jpg"
+    },
+    {
+      "title": "What Makes AI Understand Language? A Beginner’s Guide to Sequence Modeling",
+      "url": "https://medium.com/@gorangsolanki111/what-makes-ai-understand-language-a-beginners-guide-to-sequence-modeling-df7ad4eac59c",
+      "date": "2025-07-13",
+      "tags": [
+        "nlp",
+        "python",
+        "sequence modeling",
+        "rnn",
+        "sequence to sequence"
+      ],
+      "excerpt": "High-level overview of sequence modeling In 2025, AI systems like ChatGPT, Siri, and Gemini are astonishingly good at understanding and generating human language. But have you ever wondered: how do these machines…",
+      "readMinutes": 3,
+      "thumbnail": "assets/img/blog/what-makes-ai-understand-language-a-beginners-guide-to-sequence-modeling.jpg"
+    }
+  ]
+}

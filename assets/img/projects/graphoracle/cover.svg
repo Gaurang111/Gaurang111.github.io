@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="JetBrains Mono, Consolas, monospace">
+  <defs>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff6b1a" stop-opacity=".55"/><stop offset="1" stop-color="#ff6b1a" stop-opacity="0"/></radialGradient>
+    <pattern id="d" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1.2" fill="#ffffff" fill-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#0b0d11"/>
+  <rect width="1600" height="900" fill="url(#d)"/>
+  <circle cx="720" cy="430" r="260" fill="url(#glow)"/>
+  <!-- edges -->
+  <g stroke="#5b6573" stroke-width="2.5" stroke-opacity=".7">
+    <line x1="720" y1="430" x2="470" y2="260"/><line x1="720" y1="430" x2="980" y2="250"/><line x1="720" y1="430" x2="560" y2="640"/>
+    <line x1="720" y1="430" x2="930" y2="620"/><line x1="470" y1="260" x2="300" y2="400"/><line x1="470" y1="260" x2="560" y2="120"/>
+    <line x1="980" y1="250" x2="1180" y2="170"/><line x1="980" y1="250" x2="1190" y2="380"/><line x1="930" y1="620" x2="1140" y2="700"/>
+    <line x1="560" y1="640" x2="380" y2="740"/><line x1="300" y1="400" x2="380" y2="740"/><line x1="1190" y1="380" x2="1140" y2="700"/>
+    <line x1="560" y1="120" x2="980" y2="250"/><line x1="1190" y1="380" x2="1360" y2="520"/>
+  </g>
+  <!-- cascade edges -->
+  <g stroke="#ff6b1a" stroke-width="5" stroke-linecap="round">
+    <line x1="720" y1="430" x2="980" y2="250"/><line x1="720" y1="430" x2="930" y2="620"/><line x1="980" y1="250" x2="1190" y2="380"/>
+  </g>
+  <!-- nodes by type -->
+  <g stroke="#0b0d11" stroke-width="5">
+    <circle cx="720" cy="430" r="40" fill="#ff6b1a"/>
+    <circle cx="980" cy="250" r="28" fill="#ff9a5c"/><circle cx="930" cy="620" r="28" fill="#ff9a5c"/><circle cx="1190" cy="380" r="24" fill="#ffc29b"/>
+    <rect x="448" y="238" width="44" height="44" rx="6" fill="#3ee6c4"/><rect x="278" y="378" width="44" height="44" rx="6" fill="#3ee6c4"/><rect x="1118" y="678" width="44" height="44" rx="6" fill="#3ee6c4"/>
+    <path d="M560 92l30 52h-60z" fill="#a78bfa"/><path d="M1180 142l30 52h-60z" fill="#a78bfa"/><path d="M380 712l30 52h-60z" fill="#a78bfa"/>
+    <circle cx="560" cy="640" r="22" fill="#e6e4dd"/><circle cx="1360" cy="520" r="22" fill="#e6e4dd"/>
+  </g>
+  <!-- shock label -->
+  <rect x="676" y="490" width="232" height="34" rx="4" fill="#ff6b1a"/>
+  <text x="688" y="514" font-size="18" fill="#160700" font-weight="700">shock · load −40%</text>
+  <!-- horizon chart -->
+  <g transform="translate(1040 760)">
+    <text x="0" y="0" font-size="16" fill="#8d939e">forecast t+1  t+6  t+24</text>
+    <path d="M0 70 C 80 30, 140 60, 220 20 S 330 40, 420 10" fill="none" stroke="#ecebe6" stroke-width="3"/>
+    <path d="M220 20 S 330 0, 420 -20 L 420 40 S 330 70, 220 20z" fill="#ff6b1a" fill-opacity=".25"/>
+  </g>
+  <text x="80" y="110" font-size="20" fill="#8d939e" letter-spacing="2">HGT · TGN MEMORY · CONFORMAL PI</text>
+</svg>

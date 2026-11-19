@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4fd1f0"/></marker>
+    <marker id="arrO" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ff9f43"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4ade80"/></marker>
+  </defs>
+  <rect width="1280" height="560" rx="18" fill="#0b1018"/>
+
+  <text x="640" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">One pick, end to end</text>
+  <text x="640" y="72" text-anchor="middle" font-size="15" fill="#8b98ad">the model only ever trained in simulation</text>
+
+  <!-- column headers -->
+  <g font-size="17" font-weight="700">
+    <text x="205" y="118" text-anchor="middle" fill="#4fd1f0">1  Real to sim</text>
+    <text x="640" y="118" text-anchor="middle" fill="#ff9f43">2  World model plans</text>
+    <text x="1075" y="118" text-anchor="middle" fill="#4ade80">3  Sim to real</text>
+  </g>
+
+  <!-- column 1 -->
+  <g>
+    <rect x="40" y="135" width="330" height="95" rx="14" fill="#111a2a" stroke="#4fd1f0" stroke-width="2"/>
+    <text x="205" y="170" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Overhead webcam</text>
+    <text x="205" y="196" text-anchor="middle" font-size="14" fill="#9fb0c6">one fixed camera above the mat</text>
+    <text x="205" y="215" text-anchor="middle" font-size="14" fill="#9fb0c6">finds the cube, flattens the view</text>
+
+    <rect x="40" y="265" width="330" height="95" rx="14" fill="#111a2a" stroke="#4fd1f0" stroke-width="2"/>
+    <text x="205" y="300" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Cube pose</text>
+    <text x="205" y="326" text-anchor="middle" font-size="14" fill="#9fb0c6">x, y and yaw in the arm's frame</text>
+    <text x="205" y="345" text-anchor="middle" font-size="14" fill="#9fb0c6">(camera-to-arm map fitted once)</text>
+
+    <rect x="40" y="395" width="330" height="95" rx="14" fill="#111a2a" stroke="#4fd1f0" stroke-width="2"/>
+    <text x="205" y="430" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Simulated twin</text>
+    <text x="205" y="456" text-anchor="middle" font-size="14" fill="#9fb0c6">physics model of the same arm and desk,</text>
+    <text x="205" y="475" text-anchor="middle" font-size="14" fill="#9fb0c6">cube placed where the camera saw it</text>
+
+    <line x1="205" y1="230" x2="205" y2="262" stroke="#4fd1f0" stroke-width="2.5" marker-end="url(#arrC)"/>
+    <line x1="205" y1="360" x2="205" y2="392" stroke="#4fd1f0" stroke-width="2.5" marker-end="url(#arrC)"/>
+  </g>
+
+  <!-- column 2 -->
+  <g>
+    <rect x="450" y="135" width="380" height="355" rx="16" fill="#111a2a" stroke="#ff9f43" stroke-width="2.5"/>
+    <g fill="#27364f">
+      <circle cx="490" cy="190" r="9"/><circle cx="490" cy="218" r="9"/><circle cx="490" cy="246" r="9"/><circle cx="490" cy="274" r="9"/>
+      <circle cx="565" cy="176" r="9"/><circle cx="565" cy="204" r="9"/><circle cx="565" cy="232" r="9"/><circle cx="565" cy="260" r="9"/><circle cx="565" cy="288" r="9"/>
+      <circle cx="640" cy="162" r="9" fill="#4fd1f0"/><circle cx="640" cy="190" r="9" fill="#4fd1f0"/><circle cx="640" cy="218" r="9" fill="#4fd1f0"/><circle cx="640" cy="246" r="9" fill="#4fd1f0"/><circle cx="640" cy="274" r="9" fill="#4fd1f0"/><circle cx="640" cy="302" r="9" fill="#4fd1f0"/>
+      <circle cx="715" cy="176" r="9"/><circle cx="715" cy="204" r="9"/><circle cx="715" cy="232" r="9"/><circle cx="715" cy="260" r="9"/><circle cx="715" cy="288" r="9"/>
+      <circle cx="790" cy="190" r="9"/><circle cx="790" cy="218" r="9"/><circle cx="790" cy="246" r="9"/><circle cx="790" cy="274" r="9"/>
+    </g>
+    <text x="640" y="342" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">World model + policy</text>
+    <text x="640" y="372" text-anchor="middle" font-size="14" fill="#9fb0c6">input: 6 joint angles + cube pose</text>
+    <text x="640" y="394" text-anchor="middle" font-size="14" fill="#9fb0c6">learned latent state, imagines the next moments</text>
+    <text x="640" y="416" text-anchor="middle" font-size="14" fill="#9fb0c6">policy picks moves that end with a held cube</text>
+    <text x="640" y="450" text-anchor="middle" font-size="14" fill="#ff9f43">runs closed loop inside the simulator at 20 Hz</text>
+    <text x="640" y="471" text-anchor="middle" font-size="14" fill="#ff9f43">output: joint targets</text>
+  </g>
+
+  <!-- column 3 -->
+  <g>
+    <rect x="910" y="135" width="330" height="95" rx="14" fill="#111a2a" stroke="#4ade80" stroke-width="2"/>
+    <text x="1075" y="170" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Planned joint path</text>
+    <text x="1075" y="196" text-anchor="middle" font-size="14" fill="#9fb0c6">the whole pick, recorded from the sim</text>
+    <text x="1075" y="215" text-anchor="middle" font-size="14" fill="#9fb0c6">reach, grasp, lift, hold</text>
+
+    <rect x="910" y="265" width="330" height="95" rx="14" fill="#111a2a" stroke="#4ade80" stroke-width="2"/>
+    <text x="1075" y="300" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Servo bridge</text>
+    <text x="1075" y="326" text-anchor="middle" font-size="14" fill="#9fb0c6">sim angles to servo ticks, within the real</text>
+    <text x="1075" y="345" text-anchor="middle" font-size="14" fill="#9fb0c6">joint ranges, lead for the servo lag</text>
+
+    <rect x="910" y="395" width="330" height="95" rx="14" fill="#111a2a" stroke="#4ade80" stroke-width="2"/>
+    <text x="1075" y="430" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Real SO-101 arm</text>
+    <text x="1075" y="456" text-anchor="middle" font-size="14" fill="#9fb0c6">follows the path and picks up</text>
+    <text x="1075" y="475" text-anchor="middle" font-size="14" fill="#9fb0c6">the real cube</text>
+
+    <line x1="1075" y1="230" x2="1075" y2="262" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arrG)"/>
+    <line x1="1075" y1="360" x2="1075" y2="392" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arrG)"/>
+  </g>
+
+  <!-- connectors between columns -->
+  <line x1="372" y1="442" x2="446" y2="442" stroke="#4fd1f0" stroke-width="3" marker-end="url(#arrC)"/>
+  <text x="409" y="430" text-anchor="middle" font-size="12" fill="#4fd1f0">state</text>
+  <line x1="832" y1="312" x2="906" y2="182" stroke="#ff9f43" stroke-width="3" marker-end="url(#arrO)"/>
+  <text x="880" y="255" text-anchor="middle" font-size="12" fill="#ff9f43">joint targets</text>
+
+  <text x="640" y="535" text-anchor="middle" font-size="14" fill="#8b98ad">camera  →  simulated twin  →  world model plans in the sim  →  real arm replays the path</text>
+</svg>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Writing · Gaurang Solanki</title>
+  <meta name="description" content="Articles by Gaurang Solanki on computer vision, transformers, LLMs, agents and the engineering behind them.">
+  <meta name="theme-color" content="#08090b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body data-page="writing">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="index.html" aria-label="Gaurang Solanki, home"><span class="brand-mark">GS</span><span>Gaurang Solanki</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#day-job">Day job</a>
+        <a href="writing.html" class="on">Writing</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+      </button>
+      <a class="nav-cta" href="index.html#contact">Let's talk</a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow rv"><b>✎</b> Writing</p>
+        <h1 class="rv d1">Notes from building AI.</h1>
+        <p class="rv d2">Plain-language deep dives into how models see, read and act, written while I was learning or shipping them. Published on Medium and synced here automatically.</p>
+      </div>
+    </section>
+    <section class="wrap" style="padding-bottom:110px">
+      <div class="toolbar rv">
+        <label class="search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg>
+          <span class="sr-only">Search articles</span><input id="q" type="search" placeholder="Search articles" autocomplete="off"></label>
+        <div class="filters" id="topics" style="margin:0"></div>
+      </div>
+      <div class="posts" id="allPostsGrid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      <p class="empty" id="none" hidden>No articles match that search.</p>
+    </section>
+  </main>
+
+  <footer class="foot mono">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Gaurang Solanki</span>
+      <a href="https://medium.com/@gorangsolanki111" target="_blank" rel="noopener">Follow on Medium ↗</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>  <script src="assets/js/site.js"></script>
+  <script>
+    (function () {
+      // Topics are grouped from the article tags so the filter stays short.
+      const TOPICS = [
+        ["all", "All", () => true],
+        ["vision", "Computer vision", (t) => /yolo|object detection|cnn|vision/.test(t)],
+        ["llm", "LLMs & agents", (t) => /llm|mcp|agent|retrieval|rag|transformer|finite state/.test(t)],
+        ["seq", "Sequence models", (t) => /rnn|lstm|attention|sequence|nlp|gated/.test(t)],
+        ["eng", "Engineering & stats", (t) => /docker|container|statistic|hypothesis|testing|software/.test(t)],
+      ];
+      const grid = document.getElementById("allPostsGrid"), q = document.getElementById("q"), none = document.getElementById("none"), topics = document.getElementById("topics");
+      let posts = [], topic = "all";
+      function render() {
+        const term = q.value.trim().toLowerCase();
+        const test = TOPICS.find((t) => t[0] === topic)[2];
+        const list = posts.filter((p) => {
+          const hay = (p.title + " " + p.excerpt + " " + p.tags.join(" ")).toLowerCase();
+          return (!term || hay.includes(term)) && test(p.tags.join(" ").toLowerCase() + " " + p.title.toLowerCase());
+        });
+        grid.innerHTML = list.map(postCard).join("");
+        none.hidden = list.length > 0;
+        reveal(grid);
+      }
+      loadPosts().then((p) => {
+        posts = p;
+        topics.innerHTML = TOPICS.map(([k, label, test]) => {
+          const n = posts.filter((x) => test(x.tags.join(" ").toLowerCase() + " " + x.title.toLowerCase())).length;
+          return n ? `<button class="filter${k === "all" ? " on" : ""}" type="button" data-t="${k}">${label}<sup>${n}</sup></button>` : "";
+        }).join("");
+        topics.addEventListener("click", (e) => {
+          const b = e.target.closest(".filter"); if (!b) return;
+          topic = b.dataset.t;
+          topics.querySelectorAll(".filter").forEach((x) => x.classList.toggle("on", x === b));
+          render();
+        });
+        q.addEventListener("input", render);
+        render();
+      }).catch(() => {
+        grid.innerHTML = `<p class="empty" style="grid-column:1/-1">Couldn't load articles. Read them on <a href="${SITE.medium}" style="color:var(--act)">Medium</a>.</p>`;
+      });
+    })();
+  </script>
+</body>
+</html>
